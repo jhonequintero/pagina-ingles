@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: white;
+}
+
+.encabezado{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(90deg, #0d0d1a, #1a1a33, #2e2e40, #1a1a33, #0d0d1a);
+    height: 7em;
+    color: white;
+}
+
+.contenedor-principal{
+    background-color: transparent;
+    width: 100%;
+    height: 130vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-centrado{
+    background-color: transparent;
+    width:90%;
+    height: 120vh;
+    
+    
+
+}
+
+
+.contenedor-mensaje{
+    background-color: transparent;
+    width:100%;
+    height: 30%;
+    display: flex;
+
+}
+
+
+.contenedor-tema{
+    background-color: transparent;
+    width: 100%;
+    height: 70%;
+
+}
+
+
+.contenedor-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+    background-color: #faf5f5;
+    width: 60%;
+}
+
+ ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor-imagen{
+    display: flex;
+    border: 1px solid  #777;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    width: 40%;
+}
+
+#imagen-1{
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+
+}
+
+.contenedor-tema{
+    display: flex;
+   
+}
+
+#tema{
+    font-size: 30px;
+    background: linear-gradient(90deg, #0d0d1a, #1a1a33, #2e2e40, #1a1a33, #0d0d1a);
+    /* Mostrar solo el fondo del texto */
+    -webkit-background-clip: text;
+    color: transparent;
+    /* Para navegadores modernos */
+    background-clip: text;
+}
+
+
+.contenedor-palabras{
+    background-color:#e7e2e2;
+width: 40%;
+    height: auto;
+
+}
+
+.contenedor-sopa{
+    background-color: transparent;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap: 5px;
+    margin-top: 20px;
+   
+    padding: 10px;
+}
+
+
+.container {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  #sopa-letras {
+    display: grid;
+    grid-template-columns: repeat(10, 40px); /* 10 columnas, ajusta según el tamaño de tu sopa */
+    grid-gap: 2px;
+  }
+  
+  #sopa-letras div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none; /* Evita selección de texto */
+  }
+  
+  #sopa-letras div.seleccionado {
+    background-color: rgb(226, 221, 221); /* Resalta las letras seleccionadas */
+  }
+  
+  .palabras {
+    margin-top: 20px;
+  }
+  
+  .palabras ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .palabras li {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #0d0d1a, #1a1a33, #2e2e40, #1a1a33, #0d0d1a);
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+.logo {
+  width: 5em;
+  height: auto;
+  border-radius: 50%;
+}
+
+.logo:hover { 
+  transition: transform 0.5s ease;
+  scale: (1.2);
+  border-radius: 50%;
+}

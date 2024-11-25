@@ -1,0 +1,202 @@
+
+*{
+    margin: 0; 
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+
+     background-color: white;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+   
+  
+}
+
+
+.contenedor-papa{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    background-image: url("https://i.pinimg.com/736x/16/e2/75/16e2751ee5f4cb4254cb888ebf4df51e.jpg");
+   
+}
+
+.contenedor-principal {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 4, .5);
+   /* background-image: url("https://i.pinimg.com/736x/ed/9b/50/ed9b50a59cd22e93f84907a5749142b2.jpg"); */
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #0d0d1a, #1a1a33, #2e2e40, #1a1a33, #0d0d1a);
+    color: white;
+}
+
+.menu, .menu-opciones {
+    font-size: 24px;
+}
+
+#h2-uni{
+    background: linear-gradient(90deg, #0d0d1a, #1a1a33, #2e2e40, #1a1a33, #0d0d1a);
+    /* Mostrar solo el fondo del texto */
+    -webkit-background-clip: text;
+    color: transparent;
+    /* Para navegadores modernos */
+    background-clip: text;
+    
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#enlace{
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+#enlace a:visited, #enlace a:active, #enlace a:hover {
+    text-decoration: none; /* Elimina subrayado en estado hover, activo o visitado */
+    color: transparent; /* Mantiene el texto transparente en todos los estados */
+  }
+.primera-secion {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+.segunda-secion {
+    position: relative;
+    display: inline-block;
+}
+
+.tercera-secion {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid #4b4b4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.icono {
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    background-color: #ffb6c1;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.formulario {
+    padding: 20px;
+    text-align: center;
+}
+
+.formulario h2 {
+    
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.boton-inicio {
+    width: 80%;
+    padding: 12px;
+    background: linear-gradient(135deg, #16213e 0%, #1d4d5f 25%, #21bf73 50%, #1d4d5f 75%, #16213e 100%);
+    border: 1px solid white;
+color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.registrar{
+    background-color: black;
+    color: black;
+}
+
+/* stylo juego */
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px;
+    margin-top: 1em;
+    background-color: #C3B1E1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0d0d1a, #1a1a33, #2e2e40, #1a1a33, #0d0d1a);
+}
+
+#game-container {
+    text-align: center;
+}
+
+.game-btn {
+    margin: 5px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(to right, #f375b4, #ffb6c1);
+    color: white;
+}
+
+.game-btn:hover {
+    background-color: #C3B1E1;
+    
+}
+
+#p-uni a {
+    cursor: pointer;
+    background: linear-gradient(90deg, #0d0d1a, #1a1a33, #2e2e40, #1a1a33, #0d0d1a);
+    /* Mostrar solo el fondo del texto */
+    -webkit-background-clip: text;
+    color: transparent; /* Hace que el texto sea transparente */
+    background-clip: text; /* Para navegadores modernos */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+  }
+  
+  #p-uni a:visited, #p-uni a:active, #p-uni a:hover {
+    text-decoration: none; /* Elimina subrayado en estado hover, activo o visitado */
+    color: transparent; /* Mantiene el texto transparente en todos los estados */
+  }

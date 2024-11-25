@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xd</title>
+    <link rel="stylesheet" href="pag1.css">
+    <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                question1: "is",
+                question2: "are",
+                question3: "are",
+                question4: "am",
+                question5: "is"
+            };
+
+            let score = 0;
+            let totalQuestions = Object.keys(correctAnswers).length;
+            
+            for (let i = 1; i <= totalQuestions; i++) {
+                let selectedAnswer = document.querySelector(`input[name="question${i}"]:checked`);
+                
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === correctAnswers[`question${i}`]) {
+                        score++;
+                    }
+                }
+            }
+
+            alert(`Has acertado ${score} de ${totalQuestions} respuestas.`);
+            return false; // Prevenir que el formulario se envíe
+        }
+    </script>
+</head>
+
+<body>
+     <!-- encabezado -->
+   <header>
+    <div ><img class="logo" src="2cd3e8d3-6e02-4f5a-864b-2c2eaf15f849.webp" alt=""></div>
+    
+ <!--menu -->
+    <div class="botones">
+        <nav class="menu">
+            <ul>
+                <li><a href="#Temas">Topics</a>
+                    <ul class="opciones_1">
+                        <li><a href="http://www.perfect-english-grammar.com/" target="_blank">Basic Grammar</a></li>
+                        <li><a href="https://r.search.yahoo.com/_ylt=AwrJ.XA850BnbQIAruKrcgx.;_ylu=Y29sbwNiZjEEcG9zAzMEdnRpZAMEc2VjA3Ny/RV=2/RE=1733516349/RO=10/RU=https%3a%2f%2faprenderingles.school%2fvocabulario%2f/RK=2/RS=zhXg87TRzgT9OUnjxO6ILv7dj4M-"  target="_blank">Vocabulary</a></li>
+                        <li><a href="https://r.search.yahoo.com/_ylt=AwrhULH_V0NnVAIAfm2rcgx.;_ylu=Y29sbwNiZjEEcG9zAzYEdnRpZAMEc2VjA3Ny/RV=2/RE=1733676287/RO=10/RU=https%3a%2f%2felblogdeidiomas.es%2f203-expresiones-ingles-coloquiales%2f/RK=2/RS=R.k1O8.n4ragLcBrOJtqJvzCGso-"  target="_blank">Common Expressions</a></li>
+                        <li><a href="https://r.search.yahoo.com/_ylt=AwrhWPT.WENnCN4GT6Crcgx.;_ylu=Y29sbwNiZjEEcG9zAzQEdnRpZAMEc2VjA3Ny/RV=2/RE=1733676543/RO=10/RU=https%3a%2f%2fes.howtopronounce.com%2f/RK=2/RS=j8quILNSvTe5h8dLCFGwz_.2jIY-"  target="_blank">Pronunciation</a></li>
+                        <li><a href="https://r.search.yahoo.com/_ylt=AwrFQj1PWUNn8gEAJ1Krcgx.;_ylu=Y29sbwNiZjEEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1733676623/RO=10/RU=https%3a%2f%2fwww.yeschat.ai%2fes%2fgpts-2OToJT2Xop-Interactive-Dialogue-Simulator-AI/RK=2/RS=C0mJKm8DsfL9eGoKStrhbPLoojs-"  target="_blank">Conversation simulator</a></li>
+
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Examples</a>
+                    <ul class="opciones_1">
+                      <li><a href="https://www.coursera.org/courses?query=english" target="_blank">Coursera English </a></li>
+                      <li><a href="https://www.ted.com/talks" target="_blank">TED Talks</a></li>
+                      <li><a href="https://learnenglish.britishcouncil.org/" target="_blank">British Council Learn </a></li>
+                      <li><a href="https://www.examenglish.com/" target="_blank">ExamEnglish</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav class="menu">
+            <ul>
+             
+            <li><a href="#">Resources</a>
+              <ul class="opciones_1">
+                <li><a href="https://www.bbc.co.uk/learningenglish" target="_blank">BBC Learning English</a></li>
+                <li><a href="https://www.duolingo.com" target="_blank">Duolingo</a></li>
+                <li><a href="https://www.engvid.com" target="_blank">EngVid</a></li>
+              </ul>
+          </li>
+            </ul>
+        </nav>
+        <nav class="menu">
+            <ul>
+              <li><a href="#">chats</a>
+                <ul class="opciones_1">
+                    <li><a href="#">none</a></li>
+                    <li><a href="#">none</a></li>
+                    <li><a href="#">none</a></li>
+                </ul>
+            </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+    <section>
+        <h1>TOPIC 1 - TO BE</h1>
+        <form onsubmit="return checkAnswers()">
+            <fieldset>
+                <legend>Examen de ingles: Verbo "To Be"</legend>
+                <label for="question1">1. She ___ a teacher.</label><br>
+                <input type="radio" id="question1a" name="question1" value="is">
+                <label for="question1a">is</label><br>
+                <input type="radio" id="question1b" name="question1" value="am">
+                <label for="question1b">am</label><br>
+                <input type="radio" id="question1c" name="question1" value="are">
+                <label for="question1c">are</label><br><br>
+
+                <label for="question2">2. We ___ happy today.</label><br>
+                <input type="radio" id="question2a" name="question2" value="is">
+                <label for="question2a">is</label><br>
+                <input type="radio" id="question2b" name="question2" value="am">
+                <label for="question2b">am</label><br>
+                <input type="radio" id="question2c" name="question2" value="are">
+                <label for="question2c">are</label><br><br>
+
+                <label for="question3">3. They ___ my friends.</label><br>
+                <input type="radio" id="question3a" name="question3" value="is">
+                <label for="question3a">is</label><br>
+                <input type="radio" id="question3b" name="question3" value="am">
+                <label for="question3b">am</label><br>
+                <input type="radio" id="question3c" name="question3" value="are">
+                <label for="question3c">are</label><br><br>
+
+                <label for="question4">4. I ___ tired today.</label><br>
+                <input type="radio" id="question4a" name="question4" value="is">
+                <label for="question4a">is</label><br>
+                <input type="radio" id="question4b" name="question4" value="am">
+                <label for="question4b">am</label><br>
+                <input type="radio" id="question4c" name="question4" value="are">
+                <label for="question4c">are</label><br><br>
+
+                <label for="question5">5. He ___ not at home right now.</label><br>
+                <input type="radio" id="question5a" name="question5" value="is">
+                <label for="question5a">is</label><br>
+                <input type="radio" id="question5b" name="question5" value="am">
+                <label for="question5b">am</label><br>
+                <input type="radio" id="question5c" name="question5" value="are">
+                <label for="question5c">are</label><br><br>
+
+                <input type="submit" value="¡Listo!">
+              
+            </fieldset>
+            <br>
+            
+            
+        <p id="p-uni">
+            <a href="pagina-principal.html" >Cerrar Evaluacion</a>
+          </p>
+        </form>
+    </section>
+</body>
+
+</html>
