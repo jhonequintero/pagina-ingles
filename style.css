@@ -170,8 +170,9 @@
     /* clip-path: polygon(0 0, 100% 0, 100% 60%, 70% 85%, 70% 100%, 50% 65%, 0 85%); */
   
   }
-
-  .contenedor-cubo:hover{
+  
+  .contenedor-cubo:hover {
+    border-radius: 0; /* Elimina el redondeo */
     border: none;
   }
   /* Animación para simular el movimiento del mapa (efecto de transición) */
@@ -249,7 +250,7 @@
     position: relative;
     right: 24px;
     bottom: 24px;
-    width: 298px;
+    width: 119%;
     height: 140px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -274,7 +275,7 @@
       background: white;
       border-radius: 12px;
       padding: 1.5em;
-      width: 250px;
+      width: 17.2%;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) ;
       text-align: center;
     }
@@ -484,8 +485,8 @@ legend {
   .carta-contenedor {
     border-radius: 10px;
     perspective: 1000px; /* Añade profundidad para el efecto 3D */
-    width: 300px; /* Ancho del contenedor */
-    height: 450px; /* Alto del contenedor */
+    width: 300px; 
+    height: 450px; 
   }
   
   .carta {
@@ -495,7 +496,7 @@ legend {
     width: 100%;
     height: 100%;
     position: relative;
-    transform-style: preserve-3d; /* Habilita el efecto 3D */
+    transform-style: preserve-3d;
     transition: transform 0.6s; /* Transición suave */
   }
 
@@ -625,3 +626,5 @@ margin-top: -34px;
     border-radius: 50%;
   }
   
+
+ 

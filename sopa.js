@@ -1,9 +1,4 @@
-
-
-
-
 /* script para sopa de letras */
-
 
 const sopaLetrasContainer = document.getElementById('sopa-letras');
 const palabrasLista = document.querySelectorAll('.palabras li');
@@ -11,22 +6,22 @@ const enviarSopaBtn = document.getElementById('enviar-sopa');
 const resultadoDiv = document.getElementById('resultado');
 
 // Palabras que se buscarán en la sopa
-const palabras = ["GROUND", "WATER", "NOURISH", "HEAT", "AIR", "BAN", "HUNT", "CUT", "OVERUSE", "REFOREST", "SUSTAIN", "GROW", "ADAPT", "CHAIN", "FEED", "CYCLE", "PRODUCE", "CONSUME", "DECOMPOSE", "REGENERATE"];
+const palabras = ["GROUND", "WATER", "NOURISH", "HEAT", "AIR", "BAN", "HUNT", "CUT", "OVERUSE", "REFOREST",  "GROW", "ADAPT", "CHAIN", "FEED"];
 
 // Configuración de la sopa de letras
 const sopa = [
-    ['G', 'R', 'O', 'U', 'N', 'D', 'X', 'X', 'X', 'X'],
-    ['X', 'X', 'A', 'I', 'R', 'X', 'O', 'X', 'X', 'X'],
-    ['X', 'X', 'T', 'E', 'R', 'W', 'A', 'T', 'E', 'R'],
-    ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'],
-    ['X', 'X', 'X', 'X', 'R', 'E', 'F', 'O', 'R', 'E'],
-    ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'],
-    ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'],
-    ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'],
-    ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'],
-    ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'],
-  ];
-  
+  ['G', 'R', 'O', 'U', 'N', 'D', 'G', 'R', 'O', 'W'],
+  ['R', 'I', 'A', 'H', 'R', 'X', 'O', 'J', 'E', 'N'],
+  ['Z', 'L', 'T', 'E', 'R', 'W', 'A', 'T', 'E', 'R'],
+  ['M', 'U', 'O', 'A', 'X', 'F', 'E', 'E', 'D', 'U'],
+  ['C', 'R', 'S', 'T', 'R', 'E', 'F', 'O', 'R', 'E'],
+  ['T', 'H', 'W', 'A', 'T', 'E', 'R', 'X', 'N', 'T'],
+  ['O', 'V', 'E', 'R', 'U', 'S', 'E', 'B', 'I', 'N'],
+  ['Y', 'T', 'V', 'T', 'P', 'A', 'D', 'A', 'A', 'U'],
+  ['R', 'E', 'F', 'O', 'R', 'E', 'S', 'T', 'H', 'H'],
+  ['H', 'S', 'I', 'R', 'U', 'O', 'N', 'D', 'C', 'F'],
+];
+
 
 // Crear la cuadrícula de la sopa de letras
 function crearSopaLetras() {

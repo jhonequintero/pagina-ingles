@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% ;
+    border-bottom: 1px solid transparent;
+    background: linear-gradient(90deg, #0d0d1a, #1a1a33, #2e2e40, #1a1a33, #0d0d1a);
+    cursor: pointer;height: 5em;
+    border-bottom: 2px solid white;
+  
+    position: relative;
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+  
+  }
+  
+ 
+  .logo{
+    color: white;
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  
+  
+  .botones {
+    
+    width: 20em;
+    display: flex;
+    gap: 6%;
+    margin-top: 2.4em;
+    margin-right: 13em;
+  }
+  
+  .botones button {
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 20%;
+    color: black;
+    border: none;
+    padding: 3% 5%;
+    cursor: pointer;
+  } 
+  
+  .botones button:hover {
+    background-color: rgb(187, 181, 181);
+  }
+  
+  
+  
+  .menu {
+    margin: 20px auto;
+    background-color:transparent ;
+    border-radius: 8px;
+    /* box-shadow: 5px 5px 15px rgba(184, 182, 182, 0.5); */
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    position: relative;
+    display: inline-block; 
+    margin-right: 10px;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  .menu ul li a:hover {
+    background-color:transparent;
+    color:white;
+  }
+  
+  /* Submenú (menú desplegable) */
+  .menu ul li ul.opciones_1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:#1a1a2e;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 0;
+    min-width: 200px; 
+    z-index: 1000; 
+  }
+  
+  .menu ul li ul.opciones_1 li {
+    display: block;
+    margin: 0;
+  }
+  
+  .menu ul li ul.opciones_1 a {
+    padding: 8px 16px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+  }
+  
+  .menu ul li ul.opciones_1 a:hover {
+    background-color: #ddd;
+    /* color: #00c8ff; */
+  }
+  
+
+  .menu ul li:hover ul.opciones_1 {
+    display: block;
+  }
+
+/* Main Section Styles */
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.titulo {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 20px;
+        flex-direction: column;
+        align-items: flex-start; /* Aligns items to the left */
+        height: auto;
+        padding: 1.5em 0; /* Adjust padding */
+    }
+
+    .botones {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 1em;
+        gap: 15%;
+    }
+
+    .titulo {
+        font-size: 28px;
+    }
+
+    input[type="text"], textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+
+#p-uni a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+  }
+  
+  #p-uni a:visited, #p-uni a:active, #p-uni a:hover {
+    text-decoration: none; /* Elimina subrayado en estado hover, activo o visitado */
+    color: rgb(0, 0, 0); /* Mantiene el texto transparente en todos los estados */
+  }
