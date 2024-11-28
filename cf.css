@@ -1,0 +1,304 @@
+*{
+    
+    padding: 0px;
+    margin: 0;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    border-bottom: 2px solid white;
+    background: linear-gradient(90deg, #0d0d1a, #1a1a33, #2e2e40, #1a1a33, #0d0d1a);
+    height: 6em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.botones {
+    width: 20em;
+    display: flex;
+    gap: 6%;
+    margin-top: 2.4em;
+    margin-right: 13em;
+}
+
+.menu {
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li:hover ul.opciones_1 {
+    display: block;
+}
+
+.menu ul li ul.opciones_1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a2e;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.menu ul li ul.opciones_1 li {
+    display: block;
+    margin: 0;
+}
+
+.menu ul li ul.opciones_1 a {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: black;
+}
+
+.menu ul li ul.opciones_1 a:hover {
+    background-color: #ddd;
+}
+.divlogo{
+    width: 15vh;
+    height: 15vh;
+    margin: 2vh;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+footer{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to right,#59595b, #2e026f);
+}
+.divsection{
+    width: 70%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background: #eeeeee;
+    height: auto;
+    box-shadow: 0.5vh 0.9vh 2vh 0.5vh rgb(124, 124, 124);
+    border-radius: 2vh 2vh 2vh 2vh;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+    background: #f1f1f1;
+    background-image: linear-gradient(
+        90deg,
+        transparent 50px,
+        #ffb4b8 50px,
+        #ffb4b8 52px,
+        transparent 52px
+    ),
+    linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
+    background-size: 100% 30px;
+}
+
+.divheader{
+    width: 100%;
+    height: 15vh;
+    margin: 2vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.divpreguntas{
+    width: 90%;
+    height: auto;
+    margin-bottom: 5vh;
+    background:transparent;
+    padding: 2.5vh;
+    border-bottom: 1px solid;
+    
+}
+.Enunciado{
+    height: 5vh;
+    width: auto;
+    font-size: 1.7vh;
+    padding-left: 1vh;
+    display: flex;
+
+}
+.respuesta{
+    margin-top: 2.5vh;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.opciones{
+    height: 20%;
+    margin-bottom: 1vh;
+    width: 80%;
+}
+label{
+    font-weight: 550;
+}
+.divPresent{
+    width: 90%;
+    height: auto;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+}
+.inputext{
+    width: 70%;
+    height: 15vh;
+    padding: 1vh;
+}
+/*____________________________________________________________________*/
+.card {
+    width: 80%;
+    height: 15vh;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2 {
+    width: 100%;
+    height: 15vh;
+    background-color: #f1f1f1;
+    border-radius:1vh;
+    transition: all .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2:hover {
+    transform: scale(0.97);
+    border-radius: 2.5vh 2.5vh 2.5vh 2.5vh;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+.Title{
+    color: rgb(0, 0, 0);
+    font-size: 10vh;
+}
+/*____________________________________________________________*/
+.button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-class-name {
+    --primary: 255, 90, 120;
+    --secondary: 150, 50, 60;
+    width: 60px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    outline: 10px solid rgb(var(--primary), .5);
+    border-radius: 100%;
+    position: relative;
+    transition: .3s;
+}
+
+.btn-class-name .back {
+    background: rgb(var(--secondary));
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-class-name .front {
+    background: linear-gradient(0deg, rgba(var(--primary), .6) 20%, rgba(var(--primary)) 50%);
+    box-shadow: 0 .5em 1em -0.2em rgba(var(--secondary), .5);
+    border-radius: 100%;
+    position: absolute;
+    border: 1px solid rgb(var(--secondary));
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: inherit;
+    transform: translateY(-15%);
+    transition: .15s;
+    color: rgb(var(--secondary));
+}
+
+.btn-class-name:active .front {
+    transform: translateY(0%);
+    box-shadow: 0 0;
+}
+
+
+.m{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+#p-uni a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none; 
+  }
+  
+  #p-uni a:visited, #p-uni a:active, #p-uni a:hover {
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+  }
